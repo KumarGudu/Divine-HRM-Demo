@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet" href="./CSS/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>AdminHub</title>
+</head>
+
+<body>
+
+
+    <!-- SIDEBAR -->
+    <navbar id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">HRM SYSTEM</span>
+		</a>
+		<ul class="side-menu top">
+			<li>
+				<a href="Dashboard.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="Organization.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Organization</span>
+				</a>
+			</li>
+			<li>
+				<a href="Employee.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Employee</span>
+				</a>
+			</li>
+			<li class="active">
+				<a href="Project.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Project</span>
+				</a>
+			</li>
+			<li>
+				<a href="Attendance.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Attendance</span>
+				</a>
+			</li>
+			<li>
+
+				<a href="Payroll.html">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Payroll</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class='bx bxs-group' ></i>
+					<span class="text">Customers</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</navbar>
+    <!-- SIDEBAR -->
+
+
+
+    <!-- CONTENT -->
+    <section id="content">
+        <!-- NAVBAR -->
+        <nav>
+            <i class='bx bx-menu'></i>
+
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="switch-mode" hidden>
+            <label for="switch-mode" class="switch-mode"></label>
+            <a href="#" class="notification">
+                <i class='bx bxs-bell'></i>
+                <span class="num">8</span>
+            </a>
+            <a href="#" class="profile">
+                <img src="img/people.png">
+            </a>
+        </nav>
+        <!-- NAVBAR -->
+
+        <!-- MAIN -->
+        <main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Organization</h1>
+					<ul class="breadcrumb">
+						<li>
+							<a class="active" href="Project.html">Project</a>
+						</li>
+						<li><i class='bx bx-chevron-right' ></i></li>
+						<li>
+							<a href="#">Add Project</a>
+						</li>
+					</ul>
+				</div>
+				<a href="#" class="btn-download">
+					<i class='bx bxs-cloud-download' ></i>
+					<span class="text">Download PDF</span>
+				</a>
+			</div>
+                <div id="form">
+                    <div id="formtitle">
+                        <div class="title">
+                            <i class="fa fa-user-plus"></i>
+                            <span> Add New Project</span>
+                        </div>
+                    </div>
+                    <form class="row">
+                        <div class="col">
+                            <div class="col-3 ">
+                                <label for="inputname" class="form-label">Project's Title</label><br>
+                                <input type="text" class="form-control " placeholder="Project Name"
+                                    aria-label="name">
+                            </div>
+                            <div class="col-3">
+                                <label for="inputEmail" class="form-label">Start Date</label><br>
+                                <input type="date" class="form-control"
+                                    aria-label="Email">
+                            </div>
+                            <div class="col-3 ">
+                                <label for="inputWebsite" class="form-label">End Date</label><br>
+                                <input type="date" class="form-control "
+                                    >
+                            </div>
+                            <div class="col-3">
+                                <label for="inputDept" class="form-label">Project's Status</label><br>
+                                <select id="inputDept" class="form-select">
+                                    <option selected>status</option>
+                                    <option></option>
+                                    <option></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="col-3 ">
+                                <label for="inputWebsite" class="form-label">Project's Details</label><br>
+                                <textarea placeholder="Write Your Project's Details here.."></textarea>
+                            </div>
+                            <div class="col-3 ">
+                                <label for="inputWebsite" class="form-label">Project's Summery</label><br>
+                                <textarea placeholder="Write Your Project's Summery here.."></textarea>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button type="button" class="success"><i class="fa fa-check"></i> Save</button>
+                            <button type="button" class="danger">Cancle</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!-- MAIN -->
+    </section>
+    <!-- CONTENT -->
+
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1068 @@
+
+:root {
+	--poppins: 'Poppins', sans-serif;
+	--lato: 'Lato', sans-serif;
+
+	--light: #F9F9F9;
+	--blue: #3C91E6;
+	--light-blue: #CFE8FF;
+	--grey: #eee;
+	--dark-grey: #AAAAAA;
+	--dark: #342E37;
+	--red: #DB504A;
+	--yellow: #FFCE26;
+	--light-yellow: var(--light)2C6;
+	--orange: #FD7238;
+	--light-orange: #FFE0D3;
+}
+body.dark {
+	--light: #0C0C1E;
+	--grey: #060714;
+	--dark: #FBFBFB;
+}
+/* body{
+    font-family: sans-serif;
+    background-color: #f0f8ff;
+} */
+#header{
+    color: var(--blue);
+    font-size: 25px;
+    padding-left: 15px;
+    margin-top: -7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+#link>a{
+    color: var(--dark-grey);
+    font-size: 20px;
+}
+#subhead{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#subhead>button{
+    color: var(--light);
+    background-color: var(--blue);
+    border: none;
+    height: 30px;
+    width: 150px;
+    margin-right: 5px;
+    font-size: 15px;
+    border-radius: 2px;
+}
+#form{
+    background-color: var(--light);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px 5px #888888;
+}
+#formtitle{
+    color: var(--blue);
+    font-size: 20px;
+    padding: 15px 0 10px 15px;
+    overflow: hidden;
+    border-bottom: 2px solid var(--blue);
+}
+.title{
+    margin-left: 10px;
+}
+.row{
+    margin-top: 10px;
+    color: var(--dark);
+    margin-left: 25px;
+    display: block;
+    width: 100%;
+    background-color: var(--light);
+}
+.col{
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 30px;
+}
+.col-3{
+    width: 25%;
+    float: left;
+    display: inline;
+}
+select{
+    /* margin-top: 5px; */
+    color: var(--dark);
+    width: 250px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #808080;
+    background-color: var(--light);
+}
+select:focus {
+    border:2px solid var(--blue);
+    box-shadow: 2px 2px 5px 2px #888888;
+  }
+input{
+    /* margin-top: 5px; */
+    color: var(--dark);
+    padding-left: 5px;
+    width: 250px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #808080;
+    background-color: var(--light);
+}
+input:focus {
+    border:2px solid var(--blue);
+    box-shadow: 2px 2px 5px 2px #888888;
+}
+textarea{
+    /* margin-top: 5px; */
+    color: var(--dark);
+    padding-left: 5px;
+    width: 250px;
+    height: 70px;
+    outline: none;
+    border: 1px solid #808080;
+    background-color: var(--light)
+}
+#img{
+    /* margin-top: 5px; */
+    border: 1px solid #808080;
+    width: 250px;
+    height: 29px;
+    padding-top: 3px;
+    padding-left: 5px;
+}
+#img:focus{
+    border:2px solid var(--blue);
+    border-radius: 4px;
+    padding-top: 7px;
+    box-shadow: 2px 2px 5px 2px #888888;
+}
+.col>button{
+    height: 30px;
+    width: 90px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    color: var(--light);
+    margin-right: 10px;
+    border: none;
+    border-radius: 2px;
+}
+.success{
+    background-color: #008000;
+}
+.danger{
+    background-color: #ff0000;
+}
+::placeholder {
+    color: var(--dark);
+}
+
+
+/* Profile Update */
+
+.personalinfo{
+    margin-bottom: 570px;
+}
+.ttl{
+    padding: 20px;
+    color: var(--dark);
+    font-size: 20px;
+}
+.personal{
+    width: 100%;
+    float: left;
+    display: inline;
+}
+.profilearea{
+    float: left;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--light);
+    border-radius: 20px;
+}
+.dp{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 30px 36%;
+}
+.name{
+    text-align: center;
+    font-size: 20px;
+    color: var(--dark);
+}
+.position{
+    text-align: center;
+    color: #808080;
+    padding-bottom: 40px;
+    font-size: 13px;
+}
+.sl{
+    border-top: 1px solid var(--dark-grey);
+}
+.em{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: var(--dark);
+}
+.l{
+    color: #808080;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.t{
+    margin-bottom: 30px;
+}
+.socialpro{
+    margin-bottom: 10px;
+}
+.socialpro > a{
+    padding: 0 10px;
+    font-size: 30px;
+    color: var(--dark);
+}
+.socialpro > a:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.info{
+    display: inline;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--light);
+    border-radius: 20px;
+    margin-left: 20px;
+    width: 68%;
+}
+.form > div{
+    color: var(--dark);
+    float: left;
+    width: 32%;
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 27px;
+}
+.add{
+    display: inline;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--light);
+    border-radius: 20px;
+    width: 100%;
+}
+.address{
+    margin-bottom: 145px;
+}
+.form1 > div{
+    color: var(--dark);
+    float: left;
+    width: 32%;
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 27px;
+}
+.education
+{
+    margin-bottom: 145px;
+}
+.edu{
+    display: inline;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--light);
+    border-radius: 20px;
+    width: 100%;
+}
+.form2 > div{
+    color: var(--dark);
+    float: left;
+    width: 24%;
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 27px;
+}
+.bank{
+    margin-bottom: 240px;
+}
+.account{
+    display: inline;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--light);
+    border-radius: 20px;
+    width: 100%;
+}
+.form3 > div{
+    color: var(--dark);
+    float: left;
+    width: 32%;
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 27px;
+}
+.document{
+    margin-bottom: 140px;
+}
+.doc{
+    display: inline;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--light);
+    border-radius: 20px;
+    width: 100%;
+}
+.form4 > div{
+    color: var(--dark);
+    float: left;
+    width: 49%;
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 27px;
+}
+.socialmedia{
+    margin-bottom: 100px;
+}
+.socialmed{
+    display: inline;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--light);
+    border-radius: 20px;
+    width: 100%;
+}
+.form5 > div{
+    color: var(--dark);
+    float: left;
+    width: 24%;
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 27px;
+}
+.c-3{
+    width: 350px;
+}
+.c-2{
+    width: 550px;
+}
+@media (min-width: 300px) and (max-width: 430px) {
+    .row{
+        margin-left: 10px;
+    }
+    .col{
+        float: none;
+        margin-top: 0px;
+    }
+    .col-3{
+        width: 100%;
+        float: none;
+        display: block;
+        margin-top: 10px;
+    }
+    .col>button{
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    #formtitle{
+        height: 50px;
+    }
+    #subhead>button{
+        
+        margin-top: 5px;
+        
+        border: none;
+        height: 30px;
+        margin-right: 5px;
+        font-size: 15px;
+        border-radius: 2px;
+    }
+    select{
+        width: 230px;
+    }
+    input{
+        width: 230px;
+    }
+    textarea{
+        width: 230px;
+    }
+    #img{
+        width: 230px;
+    }
+    .profilearea{
+        width: 100%;
+    }
+    .dp{
+        margin: 30px 30%;
+    }
+    .info{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form > div{
+        float: none;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .personalinfo{
+        margin-bottom: 1470px;
+    }
+    .add{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form1 > div{
+        float: none;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .address{
+        margin-bottom: 260px;
+    }
+    .edu{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form2 > div{
+        float: none;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .education{
+        margin-bottom: 330px;
+    }
+    .account{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form3 > div{
+        float: none;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .bank{
+        margin-bottom: 480px;
+    }
+    .doc{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form4 > div{
+        float: none;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .document{
+        margin-bottom: 210px;
+    }
+    .socialmed{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form5 > div{
+        float: none;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .socialmedia{
+        margin-bottom: 330px;
+    }
+    .c-3{
+        width: 230px;
+    }
+    .c-2{
+        width: 230px;
+    }
+
+}
+
+
+@media (min-width: 250px) and (max-width: 290px) {
+    .row{
+        margin-left: 5px;
+    }
+    .col{
+        float: none;
+        margin-top: 0px;
+    }
+    .col-3{
+        width: 100%;
+        float: none;
+        display: block;
+        margin-top: 10px;
+    }
+    .col>button{
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .col>.danger{
+        margin-top: -20px;
+    }
+    #formtitle{
+        height: 50px;
+    }
+    select{
+        width: 160px;
+    }
+    input{
+        width: 160px;
+    }
+    textarea{
+        width: 160px;
+    }
+    #img{
+        width: 160px;
+    }
+    #subhead>button{
+        
+        margin-top: 5px;
+        
+        border: none;
+        height: 30px;
+        margin-right: 5px;
+        font-size: 12px;
+        border-radius: 2px;
+    }
+    .profilearea{
+        width: 100%;
+    }
+    .dp{
+        margin: 30px 21%;
+    }
+    .em{
+        margin-left: 10px;
+    }
+    .socialpro > a{
+        font-size: 20px;
+    }
+    .info{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form > div{
+        float: none;
+        width: 100%;
+        margin-left: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .personalinfo{
+        margin-bottom: 1470px;
+    }
+    .add{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form1 > div{
+        float: none;
+        width: 100%;
+        margin-left: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .address{
+        margin-bottom: 260px;
+    }
+    .edu{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form2 > div{
+        float: none;
+        width: 100%;
+        margin-left: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .education{
+        margin-bottom: 330px;
+    }
+    .account{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form3 > div{
+        float: none;
+        width: 100%;
+        margin-left: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .bank{
+        margin-bottom: 480px;
+    }
+    .doc{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form4 > div{
+        float: none;
+        width: 100%;
+        margin-left: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .document{
+        margin-bottom: 210px;
+    }
+    .socialmed{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form5 > div{
+        float: none;
+        width: 100%;
+        margin-left: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .socialmedia{
+        margin-bottom: 330px;
+    }
+    .c-3{
+        width: 160px;
+    }
+    .c-2{
+        width: 160px;
+    }
+}
+
+@media (min-width: 970px) and (max-width: 1380px) {
+    .row{
+        margin-left: 25px;
+    }
+    .col{
+        float: left;
+        margin-top: 0px;
+    }
+    .col-3{
+        width: 50%;
+        float: left;
+        display: block;
+        margin-top: 20px;
+    }
+    .col>button{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    #formtitle{
+        float: none;
+        height: 60px;
+    }
+    select{
+        width: 300px;
+    }
+    input{
+        width: 300px;
+    }
+    textarea{
+        width: 300px;
+    }
+    #img{
+        width: 300px;
+    }
+    .profilearea{
+        width: 32%;
+    }
+    .dp{
+        margin: 30px 33%;
+    }
+    .em{
+        margin-left: 10px;
+    }
+    .socialpro > a{
+        font-size: 20px;
+    }
+    .info{
+        margin-left: 20px;
+        width: 65%;
+    }
+    .form > div{
+        float: left;
+        width: 47%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .personalinfo{
+        margin-bottom: 500px;
+    }
+    .add{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form1 > div{
+        float: left;
+        width: 48%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .address{
+        margin-bottom: 230px;
+    }
+    .edu{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form2 > div{
+        float: left;
+        width: 48%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .education{
+        margin-bottom: 240px;
+    }
+    .account{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form3 > div{
+        float: left;
+        width: 48%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .bank{
+        margin-bottom: 330px;
+    }
+    .doc{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form4 > div{
+        float: left;
+        width: 48%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .document{
+        margin-bottom: 140px;
+    }
+    .socialmed{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form5 > div{
+        float: left;
+        width: 48%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .socialmedia{
+        margin-bottom: 230px;
+    }
+    .c-3{
+        width: 300px;
+    }
+    .c-2{
+        width: 300px;
+    }
+    .c-1{
+        width: 200px;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 920px) {
+    .row{
+        margin-left: 20px;
+    }
+    .col{
+        float: left;
+        margin-top: 0px;
+    }
+    .col-3{
+        width: 50%;
+        float: left;
+        display: block;
+        margin-top: 20px;
+    }
+    .col>button{
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    #formtitle{
+        height: 60px;
+    }
+    select{
+        width: 200px;
+    }
+    input{
+        width: 200px;
+    }
+    textarea{
+        width: 200px;
+    }
+    #img{
+        width: 200px;
+    }
+    .profilearea{
+        width: 100%;
+    }
+    .dp{
+        margin: 30px 41%;
+    }
+    .info{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form > div{
+        float: left;
+        width: 47%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .personalinfo{
+        margin-bottom: 1180px;
+    }
+    .add{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form1 > div{
+        float: left;
+        width: 47%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .address{
+        margin-bottom: 230px;
+    }
+    .edu{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form2 > div{
+        float: left;
+        width: 47%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .education{
+        margin-bottom: 240px;
+    }
+    .account{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form3 > div{
+        float: left;
+        width: 47%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .bank{
+        margin-bottom: 330px;
+    }
+    .doc{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form4 > div{
+        float: left;
+        width: 47%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .document{
+        margin-bottom: 140px;
+    }
+    .socialmed{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form5 > div{
+        float: left;
+        width: 47%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .socialmedia{
+        margin-bottom: 230px;
+    }
+    .c-3{
+        width: 200px;
+    }
+    .c-2{
+        width: 200px;
+    }
+}
+
+@media (min-width: 520px) and (max-width: 690px) {
+    .row{
+        margin-left: 10px;
+    }
+    .col{
+        float: left;
+        margin-top: 0px;
+    }
+    .col-3{
+        width: 50%;
+        float: left;
+        display: block;
+        margin-top: 20px;
+    }
+    .col>button{
+        float: left;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    #formtitle{
+        height: 60px;
+    }
+    select{
+        width: 180px;
+    }
+    input{
+        width: 180px;
+    }
+    textarea{
+        width: 180px;
+    }
+    #img{
+        width: 180px;
+    }
+    .profilearea{
+        width: 100%;
+    }
+    .dp{
+        margin: 30px 38%;
+    }
+    .info{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form > div{
+        float: left;
+        width: 47%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .personalinfo{
+        margin-bottom: 1180px;
+    }
+    .add{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form1 > div{
+        float: left;
+        width: 47%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .address{
+        margin-bottom: 230px;
+    }
+    .edu{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form2 > div{
+        float: left;
+        width: 47%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .education{
+        margin-bottom: 240px;
+    }
+    .account{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form3 > div{
+        float: left;
+        width: 47%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .bank{
+        margin-bottom: 330px;
+    }
+    .doc{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form4 > div{
+        float: left;
+        width: 47%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .document{
+        margin-bottom: 140px;
+    }
+    .socialmed{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .form5 > div{
+        float: left;
+        width: 47%;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .socialmedia{
+        margin-bottom: 230px;
+    }
+    .c-3{
+        width: 180px;
+    }
+    .c-2{
+        width: 180px;
+    }
+}
+
